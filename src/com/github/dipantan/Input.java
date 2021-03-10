@@ -43,7 +43,7 @@ public class Input {
     public static Integer Int(String s) throws IOException {
         System.out.println(s);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        return br.read();
+        return Integer.valueOf(br.readLine());
     }
 
     /*
@@ -53,7 +53,7 @@ public class Input {
     @NotNull
     public static Integer Int() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        return br.read();
+        return Integer.valueOf(br.readLine());
     }
 
     /*
